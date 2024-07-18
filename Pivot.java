@@ -7,7 +7,6 @@ public class Pivot {
             for (int num : nums) {
                 totalSum += num;
             }
-            
             // Iterate through the array to find the pivot index
             for (int i = 0; i < nums.length; i++) {
                 // Check if left sum equals right sum
@@ -16,11 +15,9 @@ public class Pivot {
                 }
                 leftSum += nums[i];
             }
-            
             // If no pivot index found, return -1
             return -1;
         }
-    
         public static void main(String[] args) {
             int[] nums = {1, 7, 3, 6, 5, 6};
             int pivotIndex = findPivotIndex(nums);

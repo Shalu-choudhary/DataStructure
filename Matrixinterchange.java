@@ -1,6 +1,5 @@
 
     import java.util.Scanner;
-
 public class Matrixinterchange {
 
     public static void interchangeRowsAndColumns(int[][] matrix) {
@@ -17,12 +16,10 @@ public class Matrixinterchange {
                 result[i][j] = matrix[j][i];
             }
         }
-        
         // Print the transposed matrix
         System.out.println("Matrix after interchanging rows and columns:");
         printMatrix(result);
-    }
-    
+    } 
     public static void printMatrix(int[][] matrix) {
         for (int[] row : matrix) {
             for (int num : row) {
@@ -31,7 +28,6 @@ public class Matrixinterchange {
             System.out.println();
         }
     }
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
@@ -51,10 +47,8 @@ public class Matrixinterchange {
                 matrix[i][j] = scanner.nextInt();
             }
         }
-        
         // Close scanner
         scanner.close();
-        
         // Print original matrix
         System.out.println("Original Matrix:");
         printMatrix(matrix);

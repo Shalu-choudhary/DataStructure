@@ -20,8 +20,6 @@ public class MaxDistance {
         // return maximum distance 
         return maxD; 
     } 
-  
-    // Driver code 
     public static void main(String[] args) 
     { 
         int[] Arr = { 1, 2, 4, 1, 3, 4, 2, 5, 6, 5 }; 
