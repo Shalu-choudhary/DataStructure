@@ -22,7 +22,7 @@ public class TraversLL {
     private static Node converArr2ll(int[] arr) {
         Node head = new Node(arr[0]);
         Node mover = head;
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 1; i < arr.length; i++) {
             Node temp = new Node(arr[i]);
             mover.next = temp;
             mover = temp;
@@ -43,13 +43,14 @@ public class TraversLL {
     }
 
     public static void main(String[] args) {
-        int arr[] = {2, 3, 4, 5};
+        int arr[] = {2, 3, 4, 5, 7, 1};
         Node head = converArr2ll(arr);
         System.out.println(lengthOfll(head));
+
+        // traverse the ll--->>>>>>>
         // Node temp = head;
         // // while (temp != null) {
         // //     System.out.println(temp.data);
-
         // //     temp = temp.next;
         // // }
     }
