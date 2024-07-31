@@ -6,7 +6,6 @@ class Selectionsort{
         }
     }
     // time complexity---> o(n^2)
-
     public static void main(String[] args) {
         int arr[]={5,2,6,4,9,1};
         for(int i=0;i<arr.length-1;i++){
@@ -19,8 +18,7 @@ class Selectionsort{
             }
             int temp=arr[smallest];
             arr[smallest]=arr[i];
-            arr[i]=temp;      
-        
+            arr[i]=temp;       
     }
     printArray(arr);
 }

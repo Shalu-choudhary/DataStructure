@@ -10,17 +10,13 @@ class Bubblesort {
         // Time complexity:---- o(n^2)              (n-1)1st then (n-2).....so on constant ignore
         for(int i=0;i<arr.length-1;i++){  // outer loop  
             for(int j=0;j<arr.length-i-1;j++){  //inner loop
-
                 if(arr[j]>arr[j+1]){
                     int swap=arr[j];
                     arr[j]=arr[j+1];
                     arr[j+1]=swap;
                 }
-               
             }
-           
         }
         printArray(arr);
-        
     }
 }
