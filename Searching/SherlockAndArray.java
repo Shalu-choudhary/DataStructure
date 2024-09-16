@@ -4,12 +4,10 @@ public class SherlockAndArray {
     public static String balancedSums(int[] arr) {
         int totalSum = 0;
         int leftSum = 0;
-
         // Calculate the total sum of the array
         for (int num : arr) {
             totalSum += num;
         }
-
         // Traverse through the array and check for the balanced index
         for (int i = 0; i < arr.length; i++) {
             // Calculate the right sum
@@ -19,11 +17,9 @@ public class SherlockAndArray {
             if (leftSum == rightSum) {
                 return "YES";
             }
-
             // Update the left sum for the next index
             leftSum += arr[i];
         }
-
         return "NO";
     }
 
